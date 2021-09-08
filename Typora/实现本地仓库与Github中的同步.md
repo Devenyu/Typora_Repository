@@ -29,3 +29,21 @@
 
 - 后续, 当我们需要在不同的本地进行文档书写时, 每次只需要在对应的目录中执行`git pull`同步最新的远程仓库文件就OK了
 
+>遇到如下问题：
+>
+>fatal: Could not read from remote repository.（致命：不能读远端仓库。）
+>
+>![img](http://qyateyap7.hn-bkt.clouddn.com/img/1297117-20190529214018754-27174754.png)
+>
+>**A**. 如果你也是初次使用Github，且没有设置过ssh key，请按照如下：
+>
+>　　 　　1.键入：ssh-keygen -t rsa -C "你注册Github的邮箱" ，然后一路"Enter”
+>
+>　　　　 2.打开：C:\Users\你的用户名/.ssh/id_rsa.pub
+>
+>　　　　 3.复制：Notepad++打开上述文件，全部复制
+>
+>**B**. 在Github的个人设置中添加SSH公钥
+>
+>**C.** 再次键入“git push -u origin master”，若出现如下，git pull, 就OK了
+
