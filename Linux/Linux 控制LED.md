@@ -1,4 +1,4 @@
-# Linux 控制LED
+# Linux 控制LED及其驱动开发
 
 ```
 cd /sys/class/gpio/
