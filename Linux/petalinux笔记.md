@@ -62,6 +62,16 @@ petalinux-package --boot --fsbl ./images/linux/zynq.fsbl.elf --u-boot
 
 
 
+# 修改设备树之后的操作
+
+```markdown
+petalinux-build -c device-tree -x cleansstate
+
+petalinux-build -c device-tree
+```
+
+
+
 # 通过NFS共享运行
 
 ```C
